@@ -416,19 +416,19 @@ h2 {
 
 .service__wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     margin-top: 32px;
+    margin-left: 200px;
 }
 
 .service {
-    width: calc(100% - 32px);
+    width: calc(100% / 3);
 }
 
 .service__row {
     display: flex;
     align-items: flex-start;
-    padding: 30px 25px;
+    padding: 32px 25px;
 }
 
 .service__icon {
@@ -506,7 +506,89 @@ QUALITY WORK ↓
     align-items: center;
 }
 
+#quality .quality__title {
+    line-height: 1.2;
+}
 
+.quality__section .quality__image--wrapper {
+    width: 50%;
+}
+
+.quality__section {
+    max-width: 575pxpx;
+    margin-right: 65px;
+}
+
+.quality__heading {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6415ff;
+}
+
+.quality__title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px 0;
+    letter-spacing: 0.75px;
+}
+
+.quality__para {
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #7c8ba1;
+    margin-bottom: 35px;
+}
+
+#quality .quality__btn {
+    margin-top: 16px;
+}
+
+.quality__btn:hover {
+    background-color: #4b0fd1;
+}
+
+.quality__btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #6415ff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 500px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quality__image--wrapper {
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    margin: auto;
+    display: flex;
+    z-index: 1;
+}
+
+.quality__image {
+    z-index: 2;
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scale(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: #5011cc;
+    --tw-text-opacity: 1;
+    color: rgba(80, 17, 204, var(--tw-text-opacity));
+    z-index: 1;
+    display: block;
+}
 /* 
 
 STEPS ↓
@@ -518,6 +600,28 @@ STEPS ↓
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.steps__description .steps__image--wrap {
+    width: 50%;
+}
+
+.steps__image--wrap {
+    display: flex;
+    position: relative;
+}
+
+.steps__img {
+    z-index: 2;
+}
+
+.steps__grid {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+    z-index: 1;
+    fill: #5011cc;
 }
 
 
@@ -599,6 +703,12 @@ MOBILE RESPONSIVENESS ↓
 @media(max-width: 1280px) {
     header .row {
         align-items: flex-end;
+    }
+
+    .steps__grid {
+        height: 5rem;
+        width: 5rem;
+        bottom: -50px;
     }
 }
 
