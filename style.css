@@ -65,7 +65,7 @@ NAVBAR ↓
 
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 nav {
@@ -606,22 +606,50 @@ STEPS ↓
     width: 50%;
 }
 
+.steps__description {
+    padding: 32px 0;
+    padding-left: 64px;
+}
+
+.header__content {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6415ff;
+}
+
+.header__title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 16px 0;
+    letter-spacing: 0.75px;
+}
+
 .steps__image--wrap {
-    display: flex;
+    width: 50%;
     position: relative;
+    display: flex;
 }
 
 .steps__img {
+    width: 100%;
+    height: auto;
+    position: relative;
     z-index: 2;
 }
 
 .steps__grid {
     position: absolute;
+    width: 80px;
+    height: 80px;
     left: 50%;
+    bottom: -40px;
     transform: translateX(-50%);
+    fill: #5011cc;
     opacity: 0.8;
     z-index: 1;
-    fill: #5011cc;
 }
 
 
