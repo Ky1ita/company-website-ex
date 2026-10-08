@@ -652,6 +652,44 @@ STEPS ↓
     z-index: 1;
 }
 
+/* Bullet Points */
+
+.steps__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.steps__number {
+    font-size: 34px;
+    font-weight: 800;
+    align-items: center;
+    color: #6315ff33;
+    margin-right: 16px;
+    line-height: 1.2;
+}
+
+.steps__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    max-width: 320px;
+}
+
+.steps__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #4b10c0;
+    line-height: 1.5;
+}
+
+.steps__para {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 8px;
+    line-height: 1.7;
+    color: #7c8ba1;
+}
 
 /* 
 
